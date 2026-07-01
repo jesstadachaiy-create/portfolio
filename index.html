@@ -23,7 +23,7 @@
             background: #ffffff;
             border-radius: 20px;
             padding: 40px 50px;
-            max-width: 500px;
+            max-width: 550px;
             width: 100%;
             box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2);
             border-top: 8px solid #66bb6a;
@@ -63,6 +63,66 @@
             color: #1b5e20;
         }
 
+        .contact-title {
+            color: #2e7d32;
+            font-size: 20px;
+            margin: 35px 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(46, 125, 50, 0.15);
+        }
+
+        thead tr {
+            background: linear-gradient(90deg, #66bb6a, #43a047);
+        }
+
+        thead th {
+            color: #ffffff;
+            padding: 12px 15px;
+            font-size: 15px;
+            text-align: left;
+        }
+
+        tbody tr {
+            background: #f9fbe7;
+            transition: background 0.2s;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f1f8e9;
+        }
+
+        tbody tr:hover {
+            background: #dcedc8;
+        }
+
+        tbody td {
+            padding: 12px 15px;
+            font-size: 15px;
+            color: #33691e;
+            text-align: left;
+            border-bottom: 1px solid #c8e6c9;
+        }
+
+        tbody td a {
+            color: #1b5e20;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        tbody td a:hover {
+            text-decoration: underline;
+        }
+
         .footer-line {
             margin-top: 25px;
             color: #7cb342;
@@ -74,7 +134,7 @@
 <body>
     <div class="card">
         <div class="leaf">🌿</div>
-        <h1>ยินดีต้อนรับเข้าสู่เว็บไซต์ของเจษฎา</h1>
+        <h1>ยินดีต้อนรับเข้าสู่เว็บไซต์ของฉัน</h1>
 
         <div class="info">
             <p><span>ชื่อ-นามสกุล :</span> เจษฎา ไชยยา</p>
@@ -83,6 +143,31 @@
         <div class="info">
             <p><span>ตำแหน่ง :</span> นักศึกษาสาขาเทคโนโลยีสารสนเทศ</p>
         </div>
+
+        <div class="contact-title">📬 ช่องทางการติดต่อ</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ช่องทาง</th>
+                    <th>ข้อมูล</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>📧 Email</td>
+                    <td><a href="mailto:jesstadachaiy@gmail.com">jesstadachaiy@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>💚 Line ID</td>
+                    <td>[Line ID ของคุณ]</td>
+                </tr>
+                <tr>
+                    <td>📘 Facebook</td>
+                    <td>[ชื่อบน Facebook]</td>
+                </tr>
+            </tbody>
+        </table>
 
         <div class="footer-line">🍃 เติบโตทุกวันด้วยความรู้และประสบการณ์ 🍃</div>
     </div>
